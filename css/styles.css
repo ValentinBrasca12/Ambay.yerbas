@@ -247,7 +247,7 @@ li{
 button{
     width: 300px;
     height: 70px;
-    background-color: blue;
+    background-color: rgb(255, 0, 195);
     border: rgba(0, 0, 255, 0.674) solid 10px;
     border-radius: 15px;
     font-size: 32px;
