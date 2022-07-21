@@ -8,12 +8,13 @@ h1{
 }
 header{
     display: flex;
-    background-color: rgba(123, 255, 0, 0.759);
+    background-color: rgba(244, 234, 234, 0.759);
     height: 70px;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
 }
+
 nav{ font-weight: 600;
     padding-right: 10px;
 }
@@ -373,4 +374,4 @@ button{
         height: 70px;
         font-size: 20px;
     } 
-    }
+}
