@@ -1,0 +1,25 @@
+{
+  "name": "29295",
+  "version": "1.0.0",
+  "description": "<h1> Ambay Yerbas- proyecto coderhouse</h1>\r <p> este es un sitio de vendta de yerbas online para el curso de desarrollo web</p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/styles.scss css/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ValentinBrasca12/Ambay.yerbas.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ValentinBrasca12/Ambay.yerbas/issues"
+  },
+  "homepage": "https://github.com/ValentinBrasca12/Ambay.yerbas#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}
