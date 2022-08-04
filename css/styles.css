@@ -14,6 +14,52 @@ nav {
   nav:hover {
     color: white; }
 
+/* condicional (if) */
+/* codigo en el caso que se cumpla la funcion */
+/* maps:coleccion de variables (clave y valor) */
+/* each-- cada uno */
+.color-twitter {
+  background-color: lightblue;
+  font-size: 32px; }
+
+.color-facebook {
+  background-color: blue;
+  /* no hago nada */ }
+
+.color-instagram {
+  background-color: #ce169c;
+  /* no hago nada */ }
+
+.color-tiktok {
+  background-color: black;
+  /* no hago nada */ }
+
+.tamaño-h1 {
+  font-size: 3rem;
+  color: red; }
+
+.tamaño-h2 {
+  font-size: 2rem; }
+
+.tamaño-h3 {
+  font-size: 1rem; }
+
+.img-termos {
+  background-image: url("../recursos/matesuki.jpg"); }
+
+.img-mates {
+  background-image: url("../recursos/yerba.webp"); }
+
+.img-yerbas {
+  background-image: url("../recursos/IMG_20220724_111601_783.jpg");
+  border: 10px solid green; }
+
+/* extend: extender codigo */
+.background-centrado, .marcas__grid .chica--tomando, .marcas__grid .matesuki, .marcas__grid .mantel, .marcas__grid .montaña, .marcas__grid .yerba, .marcas__grid .yerbita, .marcas__grid .tomando, .marcas__grid .god {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
 /* MEDIA de Telefono*/
 @media (min-width: 320px) and (max-width: 575px) {
   header {
@@ -222,6 +268,10 @@ input[type="sumbit"]:hover {
     .registrarse a:hover {
       text-decoration: underline; }
 
+.carousel-item {
+  width: 1200px;
+  height: 500px; }
+
 div {
   font-size: 16px; }
 
@@ -305,57 +355,33 @@ li {
   background-color: black; }
   .marcas__grid .chica--tomando {
     grid-area: chica--tomando;
-    background-image: url(../recursos/chica--tomando.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat; }
+    background-image: url(../recursos/chica--tomando.jpg); }
   .marcas__grid .matesuki {
     grid-area: matesuki;
     display: flex;
     background-image: url(../recursos/matesuki.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     color: black;
     font-size: 32px;
     justify-content: center;
     align-items: center; }
   .marcas__grid .mantel {
     grid-area: mantel;
-    background-image: url(../recursos/mantel.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat; }
+    background-image: url(../recursos/mantel.jpg); }
   .marcas__grid .montaña {
     grid-area: montaña;
-    background-image: url(../recursos/montaña.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat; }
+    background-image: url(../recursos/montaña.jpg); }
   .marcas__grid .yerba {
     grid-area: yerba;
-    background-image: url(../recursos/yerba.webp);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat; }
+    background-image: url(../recursos/yerba.webp); }
   .marcas__grid .yerbita {
     grid-area: yerbita;
-    background-image: url(../recursos/yerbita.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat; }
+    background-image: url(../recursos/yerbita.jpg); }
   .marcas__grid .tomando {
     grid-area: tomando;
-    background-image: url(../recursos/tomando.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat; }
+    background-image: url(../recursos/tomando.jpg); }
   .marcas__grid .god {
     grid-area: god;
-    background-image: url(../recursos/god.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat; }
+    background-image: url(../recursos/god.jpg); }
 
 /* otro grid */
 .listado__grid {

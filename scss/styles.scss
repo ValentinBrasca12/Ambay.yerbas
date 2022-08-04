@@ -1,6 +1,7 @@
 @import "variables";
 @import "footer";
 @import "nav";
+@import "operators";
 @import "mediaqueries";
 *{
     margin: 0px; /* margen externo */
@@ -123,6 +124,12 @@ input[type="sumbit"]:hover{
     }
 }
 
+.carousel-item{
+    width: 1200px;
+    height: 500px;
+}
+
+
 
 
 
@@ -212,65 +219,51 @@ li{
     column-gap: 15px;
     background-color: black;
     .chica--tomando{
+        @extend .background-centrado;
         grid-area: chica--tomando;
         background-image: url(../recursos/chica--tomando.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
     }
     .matesuki{
+        @extend .background-centrado;
         grid-area: matesuki;
         display: flex;
         background-image: url(../recursos/matesuki.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
         color: black;
         font-size: 32px;
         justify-content: center;
         align-items: center;
     }
     .mantel{
+        @extend .background-centrado;
         grid-area: mantel;
         background-image: url(../recursos/mantel.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
+
     }
     .montaña{
+        @extend .background-centrado;
         grid-area: montaña;
         background-image: url(../recursos/montaña.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
+
     }
     .yerba{
+        @extend .background-centrado;
         grid-area: yerba;
         background-image: url(../recursos/yerba.webp);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
     }
     .yerbita{
+        @extend .background-centrado;
         grid-area: yerbita;
         background-image: url(../recursos/yerbita.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
     }
     .tomando{
+        @extend .background-centrado;
         grid-area: tomando;
         background-image: url(../recursos/tomando.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
     }
     .god{
+        @extend .background-centrado;
         grid-area: god;
         background-image: url(../recursos/god.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
     }
 }
 
@@ -326,9 +319,7 @@ li{
 }
 .card{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex(column, center, center);
     border: yellow solid 3px;
 }
 button{

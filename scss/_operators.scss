@@ -1,0 +1,77 @@
+/* condicional (if) */
+
+@if (condicion a cumplir) {
+/* codigo en el caso que se cumpla la funcion */
+} @else {
+/* en caso de que no se cumpla */
+}
+/* maps:coleccion de variables (clave y valor) */
+$redes:(
+    twitter: lightblue,
+    facebook: blue,
+    instagram: rgb(206, 22, 156),
+    tiktok: black,
+
+);
+
+/* each-- cada uno */
+@each $name, $color in $redes {
+    .color-#{$name}{
+        background-color: #{$color};
+        @if ($name == twitter) {
+            font-size: 32px;  
+        }@else{
+            /* no hago nada */
+        }
+    }
+    
+}
+
+
+$titulos:(
+    h1: 3rem,
+    h2: 2rem,
+    h3: 1rem,
+);
+@each $title, $size in $titulos {
+    .tamaño-#{$title}{
+        font-size: #{$size} ;
+        @if ($size > 2rem) {
+            color: red;
+        }
+    }
+    
+}
+
+
+
+$imagenes:(
+    termos: url('../recursos/matesuki.jpg'),
+    mates: url('../recursos/yerba.webp'),
+    yerbas: url('../recursos/IMG_20220724_111601_783.jpg'),
+);
+@each $img, $url in $imagenes {
+    .img-#{$img}{
+        background-image: #{$url};
+        @if ($img == yerbas) {
+            border: 10px solid green;
+            
+        }
+    }
+}
+
+/* extend: extender codigo */
+.background-centrado{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+@mixin flex($flex-direction, $justify, $align) {
+    flex-direction: $flex-direction;
+    justify-content: $justify;
+    align-items: $align;
+    
+}
+
+
