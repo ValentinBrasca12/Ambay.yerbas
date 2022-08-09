@@ -54,12 +54,6 @@ nav {
   background-image: url("../recursos/IMG_20220724_111601_783.jpg");
   border: 10px solid green; }
 
-/* extend: extender codigo */
-.background-centrado, .marcas__grid .chica--tomando, .marcas__grid .matesuki, .marcas__grid .mantel, .marcas__grid .montaña, .marcas__grid .yerba, .marcas__grid .yerbita, .marcas__grid .tomando, .marcas__grid .god {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
-
 /* MEDIA de Telefono*/
 @media (min-width: 320px) and (max-width: 575px) {
   header {
@@ -268,10 +262,6 @@ input[type="sumbit"]:hover {
     .registrarse a:hover {
       text-decoration: underline; }
 
-.carousel-item {
-  width: 1200px;
-  height: 500px; }
-
 div {
   font-size: 16px; }
 
@@ -349,39 +339,65 @@ li {
   height: 100vh;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: "chica--tomando matesuki mantel" "montaña matesuki yerba" "yerbita tomando god ";
+  grid-template-areas: "chica--tomando matesuki mantel"
+ "montaña matesuki yerba"
+ "yerbita tomando god ";
   row-gap: 15px;
   column-gap: 15px;
   background-color: black; }
   .marcas__grid .chica--tomando {
     grid-area: chica--tomando;
-    background-image: url(../recursos/chica--tomando.jpg); }
+    background-image: url(../recursos/chica--tomando.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
   .marcas__grid .matesuki {
     grid-area: matesuki;
     display: flex;
     background-image: url(../recursos/matesuki.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     color: black;
     font-size: 32px;
     justify-content: center;
     align-items: center; }
   .marcas__grid .mantel {
     grid-area: mantel;
-    background-image: url(../recursos/mantel.jpg); }
+    background-image: url(../recursos/mantel.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
   .marcas__grid .montaña {
     grid-area: montaña;
-    background-image: url(../recursos/montaña.jpg); }
+    background-image: url(../recursos/montaña.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
   .marcas__grid .yerba {
     grid-area: yerba;
-    background-image: url(../recursos/yerba.webp); }
+    background-image: url(../recursos/yerba.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
   .marcas__grid .yerbita {
     grid-area: yerbita;
-    background-image: url(../recursos/yerbita.jpg); }
+    background-image: url(../recursos/yerbita.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
   .marcas__grid .tomando {
     grid-area: tomando;
-    background-image: url(../recursos/tomando.jpg); }
+    background-image: url(../recursos/tomando.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
   .marcas__grid .god {
     grid-area: god;
-    background-image: url(../recursos/god.jpg); }
+    background-image: url(../recursos/god.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
 
 /* otro grid */
 .listado__grid {

@@ -128,7 +128,11 @@ input[type="sumbit"]:hover{
     width: 1200px;
     height: 500px;
 }
-
+.slogan{
+    font-family: 'Indie Flower', cursive;
+    color: blue;
+    text-align: center;
+}
 
 
 
@@ -137,7 +141,7 @@ input[type="sumbit"]:hover{
 div{
     font-size: 16px;
 }
-h2{
+.pasos{
     font-family: 'Indie Flower', cursive;
     color: blue;
     text-align: center;
@@ -146,11 +150,17 @@ h2{
     height: 90px;
     display: flex;
 }
+.imagen_listado{
+    width: 200px; /* ancho */
+    height: 300px; /* alto */
+    background-color: white;
+    padding: 5px 0px;
+}
 
 .imagen-small{
     width: 300px; /* ancho */
     height: 400px; /* alto */
-    background-color: red;
+    background-color: white;
     padding: 5px 0px;
 }
 .header__lista{
@@ -174,7 +184,9 @@ h2{
 
 }
 .lista{
-    background-color: aqua;
+    background-color: rgb(55, 117, 49);
+    border: 10px;
+    margin: 10px;
 }
 .imagen__yerba{
     width: 300px; /* ancho */
