@@ -128,12 +128,11 @@ input[type="sumbit"]:hover{
     width: 1200px;
     height: 500px;
 }
-.slogan{
-    font-family: 'Indie Flower', cursive;
-    color: blue;
-    text-align: center;
-}
 
+.slogan{
+    $titulos
+    @extend .slogan;
+}
 
 
 

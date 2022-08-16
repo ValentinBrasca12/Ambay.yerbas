@@ -10,9 +10,11 @@ $redes:(
     twitter: lightblue,
     facebook: blue,
     instagram: rgb(206, 22, 156),
-    tiktok: black,
+    tiktok: black; 
+)
 
-);
+
+
 
 /* each-- cada uno */
 @each $name, $color in $redes {
@@ -65,6 +67,11 @@ $imagenes:(
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat; 
+}
+.slogan:{
+    font-family: 'Indie Flower', cursive;
+    color: blue;
+    text-align: center;
 }
 
 @mixin flex($flex-direction, $justify, $align) {
