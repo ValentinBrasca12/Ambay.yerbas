@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/* tamaño de letras */
+/* rem - em -> 1rem =16px */
 footer {
   background-color: brown;
   padding: 1em 0;
@@ -14,7 +16,7 @@ nav {
   nav:hover {
     color: white; }
 
-/* condicional (if) */
+/* condicional  */
 /* codigo en el caso que se cumpla la funcion */
 /* maps:coleccion de variables (clave y valor) */
 /* each-- cada uno */
@@ -53,6 +55,12 @@ nav {
 .img-yerbas {
   background-image: url("../recursos/IMG_20220724_111601_783.jpg");
   border: 10px solid green; }
+
+/* extend: extender codigo */
+.background-centrado, .marcas__grid .chica--tomando, .marcas__grid .matesuki, .marcas__grid .mantel, .marcas__grid .montaña, .marcas__grid .yerba, .marcas__grid .yerbita, .marcas__grid .tomando, .marcas__grid .god {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 /* MEDIA de Telefono*/
 @media (min-width: 320px) and (max-width: 575px) {
@@ -262,10 +270,21 @@ input[type="sumbit"]:hover {
     .registrarse a:hover {
       text-decoration: underline; }
 
+.carousel-item {
+  width: 1000;
+  height: 800px;
+  border: 0px;
+  margin: 20px; }
+
+.slogan {
+  font-family: 'Indie Flower', cursive;
+  color: rgba(23, 105, 24, 0.871);
+  text-align: center; }
+
 div {
   font-size: 16px; }
 
-h2 {
+.pasos {
   font-family: 'Indie Flower', cursive;
   color: blue;
   text-align: center; }
@@ -274,12 +293,20 @@ h2 {
   height: 90px;
   display: flex; }
 
+.imagen_listado {
+  width: 200px;
+  /* ancho */
+  height: 300px;
+  /* alto */
+  background-color: white;
+  padding: 5px 0px; }
+
 .imagen-small {
   width: 300px;
   /* ancho */
   height: 400px;
   /* alto */
-  background-color: red;
+  background-color: white;
   padding: 5px 0px; }
 
 .header__lista {
@@ -302,7 +329,9 @@ h2 {
   padding: 100px; }
 
 .lista {
-  background-color: aqua; }
+  background-color: #377531;
+  border: 10px;
+  margin: 10px; }
 
 .imagen__yerba {
   width: 300px;
@@ -339,65 +368,39 @@ li {
   height: 100vh;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: "chica--tomando matesuki mantel"
- "montaña matesuki yerba"
- "yerbita tomando god ";
+  grid-template-areas: "chica--tomando matesuki mantel" "montaña matesuki yerba" "yerbita tomando god ";
   row-gap: 15px;
   column-gap: 15px;
   background-color: black; }
   .marcas__grid .chica--tomando {
     grid-area: chica--tomando;
-    background-image: url(../recursos/chica--tomando.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat; }
+    background-image: url(../recursos/sol-y-luna.jpg); }
   .marcas__grid .matesuki {
     grid-area: matesuki;
     display: flex;
-    background-image: url(../recursos/matesuki.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url(../recursos/berjovena.jpg);
     color: black;
     font-size: 32px;
     justify-content: center;
     align-items: center; }
   .marcas__grid .mantel {
     grid-area: mantel;
-    background-image: url(../recursos/mantel.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat; }
+    background-image: url(../recursos/yemari.jpg); }
   .marcas__grid .montaña {
     grid-area: montaña;
-    background-image: url(../recursos/montaña.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat; }
+    background-image: url(../recursos/grapia.jpg); }
   .marcas__grid .yerba {
     grid-area: yerba;
-    background-image: url(../recursos/yerba.webp);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat; }
+    background-image: url(../recursos/fidel.jpg); }
   .marcas__grid .yerbita {
     grid-area: yerbita;
-    background-image: url(../recursos/yerbita.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat; }
+    background-image: url(../recursos/primera-molienda.jpg); }
   .marcas__grid .tomando {
     grid-area: tomando;
-    background-image: url(../recursos/tomando.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat; }
+    background-image: url(../recursos/aguantadora.jpg); }
   .marcas__grid .god {
     grid-area: god;
-    background-image: url(../recursos/god.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat; }
+    background-image: url(../recursos/sol-y-lluvia.jpg); }
 
 /* otro grid */
 .listado__grid {

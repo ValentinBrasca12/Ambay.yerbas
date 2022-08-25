@@ -125,11 +125,17 @@ input[type="sumbit"]:hover{
 }
 
 .carousel-item{
-    width: 1200px;
-    height: 500px;
+    width: 1000;
+    height: 800px;
+    border: 0px;
+    margin: 20px;
 }
 
-
+.slogan{
+    font-family: 'Indie Flower', cursive;
+    color: rgba(23, 105, 24, 0.871);
+    text-align: center;
+}
 
 
 
@@ -228,13 +234,13 @@ li{
     .chica--tomando{
         @extend .background-centrado;
         grid-area: chica--tomando;
-        background-image: url(../recursos/chica--tomando.jpg);
+        background-image: url(../recursos/sol-y-luna.jpg);
     }
     .matesuki{
         @extend .background-centrado;
         grid-area: matesuki;
         display: flex;
-        background-image: url(../recursos/matesuki.jpg);
+        background-image: url(../recursos/berjovena.jpg);
         color: black;
         font-size: 32px;
         justify-content: center;
@@ -243,34 +249,34 @@ li{
     .mantel{
         @extend .background-centrado;
         grid-area: mantel;
-        background-image: url(../recursos/mantel.jpg);
+        background-image: url(../recursos/yemari.jpg);
 
     }
     .montaña{
         @extend .background-centrado;
         grid-area: montaña;
-        background-image: url(../recursos/montaña.jpg);
+        background-image: url(../recursos/grapia.jpg);
 
     }
     .yerba{
         @extend .background-centrado;
         grid-area: yerba;
-        background-image: url(../recursos/yerba.webp);
+        background-image: url(../recursos/fidel.jpg);
     }
     .yerbita{
         @extend .background-centrado;
         grid-area: yerbita;
-        background-image: url(../recursos/yerbita.jpg);
+        background-image: url(../recursos/primera-molienda.jpg);
     }
     .tomando{
         @extend .background-centrado;
         grid-area: tomando;
-        background-image: url(../recursos/tomando.jpg);
+        background-image: url(../recursos/aguantadora.jpg);
     }
     .god{
         @extend .background-centrado;
         grid-area: god;
-        background-image: url(../recursos/god.jpg);
+        background-image: url(../recursos/sol-y-lluvia.jpg);
     }
 }
 

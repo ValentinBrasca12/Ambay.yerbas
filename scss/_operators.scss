@@ -68,11 +68,7 @@ $imagenes:(
     background-size: cover;
     background-repeat: no-repeat; 
 }
-.slogan:{
-    font-family: 'Indie Flower', cursive;
-    color: blue;
-    text-align: center;
-}
+
 
 @mixin flex($flex-direction, $justify, $align) {
     flex-direction: $flex-direction;
